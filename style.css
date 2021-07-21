@@ -14,9 +14,11 @@ body {
 	justify-content: space-around;
 	background-color: #fff;
 }
+
 .navbar__brand {
 	width: 100px;
 }
+
 .navbar__logo {
 	width: 100%;
 }
@@ -34,32 +36,39 @@ body {
 	border-radius: 6px;
 	font-weight: 600;
 }
+
 .button__primary:hover {
 	border: 2px solid #ff6767;
 	cursor: pointer;
 }
+
 .container {
 	max-width: 100%;
 	padding: 20px;
 	margin: 0 auto;
 }
+
 .hero__image__container {
 	width: 100%;
 }
+
 .hero__image {
 	width: 100%;
 	border-radius: 8px;
-	box-shadow: 0 25px 50px -12px rgba(0 0 0/25%);
+	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
 }
+
 .hero__text {
 	font-weight: 800;
 	font-size: 30px;
 	margin: 20px 0;
 	color: #1d3557;
 }
+
 .food__card__description {
 	padding: 15px;
 }
+
 .food__card {
 	background-color: #f9f9f9;
 }
@@ -67,10 +76,12 @@ body {
 .food__card__image__container {
 	width: 100%;
 }
+
 .food__image {
-	width: 100%;
 	border-radius: 8px 8px 0 0;
+	width: 100%;
 }
+
 .explore__menu__text {
 	margin-top: 30px;
 	margin-bottom: 20px;
@@ -79,17 +90,62 @@ body {
 	font-weight: 800;
 	color: #1d3557;
 }
+.form {
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	display: flex;
+	gap: 10px;
+}
+.stay__updated__text {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-weight: 800;
+	color: #1d3557;
+}
+.email {
+	border: 2px solid #fcd8d4;
+	background-color: #ffe3e3;
+	padding: 10px 100px 10px 10px;
+	border-radius: 4px;
+}
+.get__update__button {
+	background-image: linear-gradient(
+		to right,
+		#ff512f 0%,
+		#dd2476 51%,
+		#ff512f 100%
+	);
+	color: #fff;
+	border: none;
+	padding: 12px;
+	border-radius: 6px;
+	font-weight: 600;
+}
+.get__update__button:hover {
+	border: 2px solid #ff6767;
+	cursor: pointer;
+}
+
 @media (min-width: 768px) {
+	.email {
+		margin-left: 20px;
+	}
 	.explore__menu__lists {
 		margin-top: 45px;
 		display: flex;
 		gap: 15px;
 		padding: 0 30px;
 	}
+
 	.explore__menu__container {
 		position: relative;
 	}
+
 	.explore__menu__gradient__bg {
+		padding-bottom: 50px;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -109,10 +165,12 @@ body {
 		margin-top: -20px;
 		margin-bottom: 30px;
 	}
+
 	.navbar {
 		justify-content: space-between;
 		padding: 10px 30px;
 	}
+
 	.hero__container {
 		margin-top: 20px;
 		display: flex;
@@ -125,23 +183,36 @@ body {
 	.container {
 		max-width: 70%;
 	}
+
 	.explore__menu__lists {
 		gap: 25px;
 	}
+
 	.navbar__brand {
 		width: 150px;
 	}
+
 	.button__primary {
 		padding: 20px;
 		font-size: 20px;
 	}
+
 	.hero__description {
 		width: 100%;
 	}
+
 	.hero__text {
 		font-size: 50px;
 	}
+
 	.explore__menu__text {
 		font-size: 48px;
+	}
+	.stay__updated__text {
+		font-size: 50px;
+	}
+	.get__update__button {
+		padding: 20px;
+		font-size: 20px;
 	}
 }
